@@ -1,6 +1,7 @@
 {
   "name": "fusion-starter",
   "private": true,
+  "homepage": "https://username.github.io/nama-repo",
   "type": "module",
   "pkg": {
     "assets": [
@@ -14,6 +15,7 @@
     "dev": "vite",
     "build": "npm run build:client && npm run build:server",
     "build:client": "vite build",
+    "deploy": "gh-pages -d dist",
     "build:server": "vite build --config vite.config.server.ts",
     "start": "node dist/server/node-build.mjs",
     "test": "vitest --run",
@@ -23,6 +25,7 @@
   "dependencies": {
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
+    "gh-pages": "^6.3.0",
     "mysql2": "^3.17.0",
     "zod": "^3.25.76"
   },
